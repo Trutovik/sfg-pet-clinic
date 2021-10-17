@@ -15,13 +15,13 @@ import java.util.Set;
 
 @Service
 @Profile("springdatajpa")
-public class OwnerJPA implements OwnerService {
+public class OwnerJPAService implements OwnerService {
 
   private final OwnerRepository ownerRepository;
   private final PetRepository petRepository;
   private final PetTypeRepository petTypeRepository;
 
-  public OwnerJPA(OwnerRepository ownerRepository, PetRepository petRepository
+  public OwnerJPAService(OwnerRepository ownerRepository, PetRepository petRepository
                         , PetTypeRepository petTypeRepository) {
     this.ownerRepository = ownerRepository;
     this.petRepository = petRepository;
